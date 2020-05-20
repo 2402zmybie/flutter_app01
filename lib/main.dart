@@ -20,48 +20,22 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//container和text组件
+//Flutter 图片组件
+/**
+ * 显示本地图片
+ */
 class MyHomeContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
        child: Container(
-         child: Text(
-           '我是一个文本我是一个文本我是一个文本我是一个文本我是一个文本我是一个文本我是一个文本我是一个文本',
-           textAlign: TextAlign.left,
-           overflow: TextOverflow.ellipsis,
-           maxLines: 2,
-           textScaleFactor: 2,
-           style: TextStyle(
-             fontSize: 16.0,
-             color: Colors.red,
-             fontWeight: FontWeight.w800,
-             fontStyle: FontStyle.italic,
-             decoration: TextDecoration.lineThrough,
-             decorationColor: Colors.white,
-             decorationStyle: TextDecorationStyle.dashed,
-             letterSpacing: 5.0
-           ),
+         child: Image.asset(
+           'images/timg.jpg',
+           fit: BoxFit.cover,
          ),
-         height: 300.0,
-         width: 300.0,
-         decoration: BoxDecoration(
-           color: Colors.yellow,
-           border: Border.all(
-             color: Colors.blue,
-             width: 2.0,
-           ),
-           borderRadius: BorderRadius.all(
-             Radius.circular(10)
-           )
-         ),
-         padding: EdgeInsets.fromLTRB(10, 30, 5, 0),
-         margin: EdgeInsets.fromLTRB(10, 30, 5, 0),
-//         transform: Matrix4.translationValues(100.0, 0, 0),
-//       transform: Matrix4.rotationZ(0.3),
-       alignment: Alignment.bottomLeft ,   //居底部左侧
-
-       )
+         height: 300,
+         width: 300,
+       ),
     );
   }
 
