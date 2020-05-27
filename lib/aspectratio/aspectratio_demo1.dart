@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
+/***
+ * aspectratio:
+ */
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text( 'Appbar')),
+        appBar: AppBar(title: Text( '')),
         body: HomeContent(),
       ),
     );
@@ -18,7 +21,16 @@ class MyApp extends StatelessWidget{
 class HomeContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return null;
+    return Container(
+      width: 200,
+      child: AspectRatio(
+        //父容器的宽是200  那么子容器的宽宽高比是2/1, 子容器的宽是200 高是100
+          aspectRatio: 2.0 / 1.0,
+          child: Container(
+            color: Colors.red,
+          ),
+      ),
+    );
   }
   
 }
