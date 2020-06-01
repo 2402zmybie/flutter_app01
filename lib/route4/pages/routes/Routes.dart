@@ -8,6 +8,7 @@ import '../AppbarDemo.dart';
 import '../AppbarDemoTabbarDemo.dart';
 import '../TabbarControllerDemo.dart';
 import '../user/User.dart';
+import '../button/ButtonPage.dart';
 
 var routes = {
   //跟路由 直接就是底部的tab切换
@@ -19,5 +20,6 @@ var routes = {
   '/appbarDemo': (context) => AppbarDemoPage(),
   '/appbarDemoTabbarDemo':(context) => AppbarDemoTabbarDemoPage(),
   '/tabbarController': (context) => TabbarControllerPage(),
-  '/user': (context) => UserPage()
+  '/user': (context) => UserPage(),
+  '/buttonPage': (context) => ButtonPageDemo()
 };

@@ -12,9 +12,10 @@ class Myapp extends StatelessWidget {
       //去掉debug图标
       debugShowCheckedModeBanner: false,
       routes: routes,
-      initialRoute: "/",
+//      initialRoute: "/",
 //      initialRoute: "/appbarDemo",
 //      initialRoute: "/appbarDemoTabbarDemo",
+      initialRoute: "/buttonPage",
     );
   }
 }
