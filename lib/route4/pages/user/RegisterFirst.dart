@@ -20,7 +20,9 @@ class _RegisterFirstPageState extends State<RegisterFirstPage> {
           RaisedButton(
             child: Text('下一步'),
             onPressed: () {
-              Navigator.pushNamed(context, '/registerSecond');
+//              Navigator.pushNamed(context, '/registerSecond');
+              //使用替换路由跳转到第二个界面,第二个页面替换到当前页面, 所以返回的时候直接返回到设置页面
+              Navigator.of(context).pushReplacementNamed('/registerSecond');
             },
           )
         ],

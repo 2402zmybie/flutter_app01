@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../tabs/Tabs.dart';
 
 class RegisterThirdPage extends StatefulWidget {
   @override
@@ -21,12 +20,7 @@ class _RegisterThirdState extends State<RegisterThirdPage> {
           RaisedButton(
             child: Text('确定'),
             onPressed: () {
-              //返回根
-//              Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => route == null);
-              Navigator.of(context).pushAndRemoveUntil(
-                new MaterialPageRoute(builder: (context) => new Tabs(index: 2)),
-                  (route) => route == null
-              );
+              Navigator.of(context).pop();
             },
           )
         ],

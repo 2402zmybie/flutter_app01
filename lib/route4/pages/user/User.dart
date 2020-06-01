@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 
-/**
- * AppBar自定义
- */
-class AppBarDemoPage extends StatelessWidget {
+class UserPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AppBarDemoPage'),),
-
-      body: Text('1111'),
+        title: Text('用户中心'),
+      ),
     );
   }
 }

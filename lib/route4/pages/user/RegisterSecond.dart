@@ -20,8 +20,7 @@ class _RegisterSecondPageState extends State<RegisterSecondPage> {
           RaisedButton(
             child: Text('下一步'),
             onPressed: () {
-//              Navigator.of(context).pushReplacementNamed('/registerThird');
-              Navigator.of(context).pushNamed('/registerThird');
+              Navigator.of(context).pushReplacementNamed('/registerThird');
             },
           )
         ],

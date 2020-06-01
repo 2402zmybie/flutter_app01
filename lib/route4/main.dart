@@ -3,15 +3,18 @@ import 'pages/routes/Routes.dart';
 
 void main() => runApp(Myapp());
 /**
- *  普通路由跳转 多层页面中有一个按钮直接返回到根
- *  pushAndRemoveUntil
+ * 替换路由 pushReplacementName
  */
 class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //去掉debug图标
+      debugShowCheckedModeBanner: false,
       routes: routes,
       initialRoute: "/",
+//      initialRoute: "/appbarDemo",
+//      initialRoute: "/appbarDemoTabbarDemo",
     );
   }
 }
