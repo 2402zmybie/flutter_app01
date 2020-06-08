@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 /***
- * aspectratio:
+ * aspectratio: 宽高占比按照图片的比例进行手机适配
  */
 class MyApp extends StatelessWidget{
   @override

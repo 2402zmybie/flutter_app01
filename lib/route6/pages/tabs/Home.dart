@@ -47,6 +47,11 @@ class _HomepageState extends State<Homepage> {
                 child: Text('第三方日期组件演示页面'),
                 onPressed: () {
                   Navigator.pushNamed(context, '/datedemopub');
+                }),
+            RaisedButton(
+                child: Text('Swiper'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/swiperdemo');
                 })
           ],
         ),

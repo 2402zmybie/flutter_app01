@@ -22,7 +22,11 @@ dependencies:
   date_format: ^1.0.8
   flutter_localizations:
     sdk: flutter
+#  第三方日期组件
   flutter_cupertino_date_picker: ^1.0.26
+#  swiper
+  flutter_swiper : ^1.1.6
+  fluttertoast: ^4.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
